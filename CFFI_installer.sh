@@ -1,0 +1,2 @@
+# g++ -shared -fPIC -o ./bin/libBsurface.so ./src/wrapper.cpp ./src/CPPbsurface.cpp ./src/image.cpp ./src/pixel.cpp -lc -D_DBG_ON
+g++ -shared -fPIC -o ./bin/libBsurface.so ./src/wrapper.cpp ./src/CPPbsurface.cpp ./src/image.cpp ./src/pixel.cpp -lc
