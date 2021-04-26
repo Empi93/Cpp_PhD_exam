@@ -4,7 +4,6 @@ import os
 import pandas as pd
 import sys
 from cffi import FFI
-from _surface.lib import PixelsC
 #from _surface_object.lib import PixelsCpp
 ffi = FFI()
 

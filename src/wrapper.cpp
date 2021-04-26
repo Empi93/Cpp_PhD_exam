@@ -20,7 +20,6 @@ bsurface_t * bsurface_create(float* Rb, float* zb, float* m, float* q,
 	CPPbsurface *obj;
 
 	b      = (typeof(b))malloc(sizeof(*b));
-	printf("Fino a qui tutto bene, ora inizializzo l'oggetto\n");
 	obj    = new CPPbsurface (Rb, zb, m, q, Case, coordinates, Rm, RM, zm, zM,
 						   lenB, dimR, dimz);
 	b->obj = obj;

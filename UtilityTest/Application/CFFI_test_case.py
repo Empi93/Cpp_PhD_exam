@@ -38,11 +38,14 @@ s.FromScratchesCpp(RSurface, zSurface, i)
 #print("Ci sono differenze tra due cicli e vettorizzazione?", np.any(s.pixels!=s1.pixels))
 
 # PLOT 
-plt.title('Cycles')
-plt.pcolor(i.RAxis, i.zAxis, s.plot, cmap='Blues', edgecolor='y')         # pixels in surface
+plt.pcolor(i.RAxis, i.zAxis, s.plot, cmap='Blues', edgecolor='y',label='mask')         # pixels in surface
 
-plt.plot(s.R, s.z, color='r')                                # surface
+plt.plot(s.R, s.z, color='r', label='surface')                                # surface
 plt.plot(s.R, s.z, 'o', color='g', markersize=1)
 
+plt.legend()
 plt.axis('scaled')
+plt.tight_layout()
+plt.savefig('results_examples.pdf')
+plt.savefig('results_examples.png')
 plt.show()
